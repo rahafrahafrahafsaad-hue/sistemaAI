@@ -1,0 +1,239 @@
+/* =========================
+   SISTEMA AI - VENDAS CSS
+========================= */
+
+
+*{
+
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+
+}
+
+
+
+body{
+
+    background:#061426;
+
+    color:white;
+
+    padding:40px;
+
+}
+
+
+
+
+.container{
+
+    max-width:1100px;
+
+    margin:auto;
+
+}
+
+
+
+
+h1{
+
+    font-size:38px;
+
+    color:#00b7ff;
+
+    margin-bottom:30px;
+
+}
+
+
+
+h2{
+
+    margin:25px 0;
+
+}
+
+
+
+
+.formulario{
+
+    background:#0b2342;
+
+    padding:30px;
+
+    border-radius:20px;
+
+    border:1px solid #164d82;
+
+    box-shadow:0 0 25px rgba(0,140,255,.2);
+
+}
+
+
+
+label{
+
+    display:block;
+
+    margin-top:15px;
+
+    color:#bde4ff;
+
+}
+
+
+
+input,
+select{
+
+
+    width:100%;
+
+    padding:15px;
+
+    margin-top:8px;
+
+    border-radius:12px;
+
+    border:none;
+
+    background:#061426;
+
+    color:white;
+
+    font-size:16px;
+
+}
+
+
+
+button{
+
+
+    margin-top:20px;
+
+    padding:15px 25px;
+
+    background:#008cff;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+    font-size:16px;
+
+
+}
+
+
+
+button:hover{
+
+    background:#00b7ff;
+
+}
+
+
+
+
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#164d82;
+
+    margin:35px 0;
+
+}
+
+
+
+
+
+table{
+
+    width:100%;
+
+    border-collapse:collapse;
+
+    background:#0b2342;
+
+    border-radius:15px;
+
+    overflow:hidden;
+
+}
+
+
+
+
+th{
+
+    background:#008cff;
+
+    padding:15px;
+
+}
+
+
+
+
+td{
+
+    padding:15px;
+
+    text-align:center;
+
+    border-bottom:1px solid #164d82;
+
+}
+
+
+
+
+tr:hover{
+
+    background:#102f55;
+
+}
+
+
+
+
+@media(max-width:700px){
+
+
+body{
+
+    padding:20px;
+
+}
+
+
+h1{
+
+    font-size:28px;
+
+}
+
+
+
+table{
+
+    font-size:14px;
+
+}
+
+
+}

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SistemaAI - Usuários</title>
+
+<link rel="stylesheet" href="css/usuarios.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>👤 Usuários</h1>
+
+<div class="formulario">
+
+<input
+id="nome"
+type="text"
+placeholder="Nome">
+
+<input
+id="login"
+type="text"
+placeholder="Login">
+
+<input
+id="senha"
+type="password"
+placeholder="Senha">
+
+<select id="cargo">
+
+<option>Administrador</option>
+
+<option>Funcionário</option>
+
+<option>Gerente</option>
+
+</select>
+
+<button onclick="adicionarUsuario()">
+Adicionar Usuário
+</button>
+
+</div>
+
+<input
+type="text"
+id="pesquisa"
+placeholder="Pesquisar..."
+onkeyup="mostrarUsuarios()">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nome</th>
+<th>Login</th>
+<th>Cargo</th>
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaUsuarios">
+
+</tbody>
+
+</table>
+
+<script type="module" src="css/js/usuarios.js"></script>
+
+</div>
+
+</body>
+
+</html>

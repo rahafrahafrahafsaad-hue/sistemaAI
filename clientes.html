@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SistemaAI - Clientes</title>
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>👥 Cadastro de Clientes</h1>
+
+<div class="formulario">
+
+<input id="nome" type="text" placeholder="Nome">
+
+<input id="telefone" type="text" placeholder="Telefone">
+
+<input id="email" type="email" placeholder="E-mail">
+
+<input id="cidade" type="text" placeholder="Cidade">
+
+<button onclick="adicionarCliente()">
+Adicionar Cliente
+</button>
+
+</div>
+
+<h2>Clientes cadastrados</h2>
+
+<input
+type="text"
+id="pesquisa"
+placeholder="🔍 Pesquisar cliente..."
+onkeyup="mostrarClientes()">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Nome</th>
+<th>Telefone</th>
+<th>Email</th>
+<th>Cidade</th>
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaClientes">
+
+</tbody>
+
+</table>
+
+<script type="module" src="css/js/clientes.js"></script>
+
+</div>
+
+</body>
+
+</html>

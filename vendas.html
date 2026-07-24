@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SistemaAI - Vendas</title>
+
+<link rel="stylesheet" href="css/vendas.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🛒 Controle de Vendas</h1>
+
+<div class="formulario">
+
+<h2>Nova Venda</h2>
+
+<label>Produto</label>
+
+<select id="produtoVenda">
+
+</select>
+
+<label>Quantidade</label>
+
+<input
+type="number"
+id="quantidadeVenda"
+placeholder="Quantidade">
+
+<label>Forma de Pagamento</label>
+
+<select id="pagamento">
+
+<option value="Pix">Pix</option>
+<option value="Cartão">Cartão</option>
+<option value="Dinheiro">Dinheiro</option>
+
+</select>
+
+<button onclick="registrarVenda()">
+✅ Registrar Venda
+</button>
+
+</div>
+
+<hr>
+
+<h2>📋 Histórico de Vendas</h2>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Produto</th>
+<th>Quantidade</th>
+<th>Valor</th>
+<th>Pagamento</th>
+<th>Ação</th>
+</tr>
+
+</thead>
+
+<tbody id="listaVendas">
+
+</tbody>
+
+</table>
+
+</div>
+
+<script type="module" src="css/js/vendas.js"></script>
+
+</body>
+</html>

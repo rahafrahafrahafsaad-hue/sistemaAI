@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Fornecedores</title>
+
+
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>🚚 Fornecedores</h1>
+
+<div class="formulario">
+
+<input id="nome" type="text" placeholder="Nome da empresa">
+
+<input id="telefone" type="text" placeholder="Telefone">
+
+<input id="email" type="email" placeholder="E-mail">
+
+<input id="cidade" type="text" placeholder="Cidade">
+
+<button onclick="adicionarFornecedor()">
+Adicionar
+</button>
+
+</div>
+
+<input
+type="text"
+id="pesquisa"
+placeholder="Pesquisar..."
+onkeyup="mostrarFornecedores()">
+
+<table>
+
+<thead>
+
+<tr>
+
+<th>Empresa</th>
+<th>Telefone</th>
+<th>Email</th>
+<th>Cidade</th>
+<th>Ações</th>
+
+</tr>
+
+</thead>
+
+<tbody id="listaFornecedores">
+
+</tbody>
+
+</table>
+
+<script type="module" src="css/js/fornecedores.js"></script>
+
+</div>
+
+</body>
+
+</html>

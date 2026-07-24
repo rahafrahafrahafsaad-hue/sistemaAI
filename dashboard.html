@@ -1,0 +1,364 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SistemaAI - Dashboard</title>
+
+<link rel="stylesheet" href="css/dashboard.css">
+
+</head>
+
+
+<body>
+
+
+<div class="layout">
+
+
+<!-- MENU -->
+
+<aside class="sidebar">
+
+<div class="logo">
+<h1>Sistema<span>AI</span></h1>
+</div>
+
+
+<nav>
+
+<a href="dashboard.html">
+📊 Dashboard
+</a>
+
+
+<a href="produtos.html">
+📦 Produtos
+</a>
+
+
+<a href="vendas.html">
+🛒 Vendas
+</a>
+
+
+<a href="clientes.html">
+👥 Clientes
+</a>
+
+
+<a href="fornecedores.html">
+🚚 Fornecedores
+</a>
+
+
+</nav>
+
+
+</aside>
+
+
+
+<!-- CONTEÚDO PRINCIPAL -->
+
+
+<main class="conteudo">
+
+
+
+<header class="topo">
+
+
+<div>
+
+<h1>
+📊 Dashboard
+</h1>
+
+
+<p id="boasVindas">
+Bem-vindo ao SistemaAI
+</p>
+
+
+</div>
+
+
+
+<div class="acoes">
+
+
+<button>
+🔔
+</button>
+
+
+<button>
+🤖 IA
+</button>
+
+
+</div>
+
+
+
+</header>
+
+
+
+<hr>
+
+
+
+<section class="cards">
+<!-- CARD FATURAMENTO -->
+
+<div class="card">
+
+<h3>💰 Faturamento Total</h3>
+
+<h2 id="faturamento">
+R$ 0,00
+</h2>
+
+</div>
+
+
+
+<!-- CARD LUCRO -->
+
+<div class="card">
+
+<h3>📈 Lucro Total</h3>
+
+<h2 id="lucro">
+R$ 0,00
+</h2>
+
+</div>
+
+
+
+<!-- CARD ESTOQUE -->
+
+<div class="card">
+
+<h3>📦 Valor do Estoque</h3>
+
+<h2 id="estoque">
+R$ 0,00
+</h2>
+
+</div>
+
+
+
+<!-- CARD VENDAS -->
+
+<div class="card">
+
+<h3>🛒 Total de Vendas</h3>
+
+<h2 id="vendas">
+0
+</h2>
+
+</div>
+
+
+
+<!-- CARD CLIENTES -->
+
+<div class="card">
+
+<h3>👥 Clientes</h3>
+
+<h2 id="clientes">
+0
+</h2>
+
+</div>
+
+
+
+<!-- CARD PRODUTOS -->
+
+<div class="card">
+
+<h3>📦 Produtos</h3>
+
+<h2 id="produtos">
+0
+</h2>
+
+</div>
+
+
+
+<!-- CARD FORNECEDORES -->
+
+<div class="card">
+
+<h3>🚚 Fornecedores</h3>
+
+<h2 id="fornecedores">
+0
+</h2>
+
+</div>
+
+
+
+<!-- CARD ESTOQUE BAIXO -->
+
+<div class="card">
+
+<h3>⚠️ Estoque Baixo</h3>
+
+<h2 id="baixo">
+0
+</h2>
+
+</div>
+
+
+</section>
+
+
+
+<hr>
+
+
+<h2>
+📈 Estatísticas
+</h2>
+<!-- GRÁFICO DE VENDAS -->
+
+<div class="grafico">
+
+<h2>
+📈 Vendas por dia
+</h2>
+
+<canvas id="graficoVendas"></canvas>
+
+</div>
+
+
+
+<br>
+
+
+
+<!-- GRÁFICO DE PRODUTOS -->
+
+<div class="grafico">
+
+<h2>
+📦 Produtos mais vendidos
+</h2>
+
+<canvas id="graficoProdutos"></canvas>
+
+</div>
+
+
+
+<br>
+
+
+
+<!-- GRÁFICO DE LUCRO -->
+
+<div class="grafico">
+
+<h2>
+💰 Evolução do lucro
+</h2>
+
+<canvas id="graficoLucro"></canvas>
+
+</div>
+
+
+
+<br><br>
+
+
+
+<!-- ÁREA DA IA -->
+
+<section class="ia-box">
+
+
+<h2>
+🤖 SistemaAI Inteligência
+</h2>
+
+
+<p id="avisoIA">
+
+Analisando dados da loja...
+
+</p>
+
+
+</section>
+
+
+
+<br>
+
+
+
+<!-- RELATÓRIO -->
+
+
+<section class="relatorio">
+
+
+<h2>
+📄 Relatórios
+</h2>
+
+
+
+<button onclick="gerarRelatorio()">
+
+📄 Gerar Relatório
+
+</button>
+
+
+
+<div id="relatorio">
+
+</div>
+
+
+</section>
+</main>
+
+
+</div>
+
+
+
+<!-- BIBLIOTECA DOS GRÁFICOS -->
+
+<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+
+
+<!-- SCRIPT DO DASHBOARD -->
+
+<script type="module" src="css/js/dashboard.js"></script>
+<script src="css/js/ia.js"></script>
+
+
+</body>
+
+</html>

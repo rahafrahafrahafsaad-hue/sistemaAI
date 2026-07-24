@@ -1,0 +1,525 @@
+/* =========================
+   SISTEMA AI - DASHBOARD CSS
+========================= */
+
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:Arial, Helvetica, sans-serif;
+}
+
+
+body{
+
+    background:#061426;
+
+    color:white;
+
+}
+
+
+
+/* LAYOUT */
+
+.layout{
+
+    display:flex;
+
+    min-height:100vh;
+
+}
+
+
+
+/* MENU LATERAL */
+
+.sidebar{
+
+    width:260px;
+
+    background:#071d38;
+
+    padding:25px;
+
+    border-right:1px solid #123b68;
+
+}
+
+
+
+.logo h1{
+
+    font-size:32px;
+
+    margin-bottom:40px;
+
+    color:white;
+
+}
+
+
+
+.logo span{
+
+    color:#00aaff;
+
+}
+
+
+
+.sidebar nav{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:15px;
+
+}
+
+
+
+.sidebar a{
+
+    text-decoration:none;
+
+    color:#dbeeff;
+
+    padding:15px;
+
+    border-radius:12px;
+
+    transition:.3s;
+
+}
+
+
+
+.sidebar a:hover{
+
+    background:#008cff;
+
+    color:white;
+
+}
+
+
+
+/* CONTEÚDO */
+
+.conteudo{
+
+    flex:1;
+
+    padding:35px;
+
+}
+
+
+
+/* TOPO */
+
+.topo{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+
+.topo h1{
+
+    font-size:36px;
+
+}
+
+
+
+#boasVindas{
+
+    color:#9ecfff;
+
+    margin-top:10px;
+
+}
+
+
+
+.acoes button{
+
+    background:#008cff;
+
+    color:white;
+
+    border:none;
+
+    padding:12px 18px;
+
+    border-radius:12px;
+
+    margin-left:10px;
+
+    cursor:pointer;
+
+}
+
+
+
+.acoes button:hover{
+
+    background:#00b7ff;
+
+}
+/* =========================
+   CARDS
+========================= */
+
+
+.cards{
+
+    display:grid;
+
+    grid-template-columns:repeat(auto-fit,minmax(230px,1fr));
+
+    gap:25px;
+
+    margin-top:30px;
+
+}
+
+
+
+.card{
+
+    background:#0b2342;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid #164d82;
+
+    box-shadow:0 0 20px rgba(0,140,255,0.15);
+
+    transition:.3s;
+
+}
+
+
+
+.card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:0 0 30px rgba(0,170,255,0.35);
+
+}
+
+
+
+.card h3{
+
+    color:#a8d8ff;
+
+    font-size:18px;
+
+    margin-bottom:15px;
+
+}
+
+
+
+.card h2{
+
+    font-size:30px;
+
+    color:#00b7ff;
+
+}
+
+
+
+/* =========================
+   GRÁFICOS
+========================= */
+
+
+.grafico{
+
+    background:#0b2342;
+
+    padding:25px;
+
+    margin-top:30px;
+
+    border-radius:18px;
+
+    border:1px solid #164d82;
+
+}
+
+
+
+.grafico h2{
+
+    margin-bottom:20px;
+
+    color:#ffffff;
+
+}
+
+
+
+canvas{
+
+    max-width:100%;
+
+}
+
+
+
+/* =========================
+   IA
+========================= */
+
+
+.ia-box{
+
+    margin-top:35px;
+
+    background:#071d38;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid #008cff;
+
+}
+
+
+
+.ia-box h2{
+
+    color:#00b7ff;
+
+}
+
+
+
+#avisoIA{
+
+    margin-top:15px;
+
+    color:#d8ecff;
+
+}
+
+
+
+/* =========================
+   RELATÓRIOS
+========================= */
+
+
+.relatorio{
+
+    margin-top:35px;
+
+    background:#0b2342;
+
+    padding:25px;
+
+    border-radius:18px;
+
+    border:1px solid #164d82;
+
+}
+
+
+
+.relatorio button{
+
+    margin-top:15px;
+
+    padding:14px 25px;
+
+    background:#008cff;
+
+    color:white;
+
+    border:none;
+
+    border-radius:12px;
+
+    cursor:pointer;
+
+}
+
+
+
+.relatorio button:hover{
+
+    background:#00b7ff;
+
+}
+
+
+
+#relatorio{
+
+    margin-top:20px;
+
+    line-height:1.8;
+
+}
+/* =========================
+   ANIMAÇÕES
+========================= */
+
+
+.card,
+.grafico,
+.ia-box,
+.relatorio{
+
+    animation: aparecer .6s ease;
+
+}
+
+
+
+@keyframes aparecer{
+
+    from{
+
+        opacity:0;
+
+        transform:translateY(20px);
+
+    }
+
+
+    to{
+
+        opacity:1;
+
+        transform:translateY(0);
+
+    }
+
+}
+
+
+
+/* =========================
+   LINHA DIVISÓRIA
+========================= */
+
+
+hr{
+
+    border:none;
+
+    height:1px;
+
+    background:#164d82;
+
+    margin:25px 0;
+
+}
+
+
+
+/* =========================
+   RESPONSIVO
+========================= */
+
+
+@media(max-width:900px){
+
+
+.layout{
+
+    flex-direction:column;
+
+}
+
+
+
+.sidebar{
+
+    width:100%;
+
+}
+
+
+
+.sidebar nav{
+
+    flex-direction:row;
+
+    flex-wrap:wrap;
+
+}
+
+
+
+.conteudo{
+
+    padding:20px;
+
+}
+
+
+
+.topo{
+
+    flex-direction:column;
+
+    align-items:flex-start;
+
+    gap:20px;
+
+}
+
+
+
+}
+
+
+
+/* =========================
+   SCROLL
+========================= */
+
+
+::-webkit-scrollbar{
+
+    width:10px;
+
+}
+
+
+
+::-webkit-scrollbar-track{
+
+    background:#061426;
+
+}
+
+
+
+::-webkit-scrollbar-thumb{
+
+    background:#008cff;
+
+    border-radius:10px;
+
+}

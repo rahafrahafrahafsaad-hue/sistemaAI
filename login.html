@@ -1,0 +1,334 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SistemaAI - Login</title>
+
+
+<style>
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:"Segoe UI", sans-serif;
+}
+
+
+body{
+
+    min-height:100vh;
+
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(135deg,#020617,#003b8f,#001b44);
+
+    overflow:hidden;
+
+}
+
+
+/* luz de fundo */
+
+body::before{
+
+    content:"";
+
+    position:absolute;
+
+    width:500px;
+    height:500px;
+
+    background:#00bfff;
+
+    filter:blur(170px);
+
+    opacity:.35;
+
+    top:-200px;
+    left:-200px;
+
+}
+
+
+
+/* caixa login */
+
+.login-box{
+
+    position:relative;
+
+    width:420px;
+
+    padding:45px;
+
+    border-radius:25px;
+
+    background:rgba(255,255,255,0.08);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.2);
+
+    box-shadow:
+    0 0 50px rgba(0,170,255,.5);
+
+    color:white;
+
+}
+
+
+
+/* logo */
+
+.logo{
+
+    text-align:center;
+
+    font-size:45px;
+
+    font-weight:900;
+
+    letter-spacing:3px;
+
+    background:linear-gradient(
+    90deg,
+    #00eaff,
+    white
+    );
+
+    -webkit-background-clip:text;
+
+    color:transparent;
+
+}
+
+
+.sub{
+
+    text-align:center;
+
+    margin-top:10px;
+
+    margin-bottom:35px;
+
+    color:#b9dcff;
+
+}
+
+
+
+/* campos */
+
+
+.campo{
+
+    margin-bottom:20px;
+
+}
+
+
+.campo label{
+
+    display:block;
+
+    margin-bottom:8px;
+
+    color:#d7ecff;
+
+}
+
+
+
+.campo input{
+
+
+    width:100%;
+
+    padding:15px;
+
+    border-radius:15px;
+
+    border:none;
+
+    outline:none;
+
+    background:rgba(255,255,255,.12);
+
+    color:white;
+
+    font-size:16px;
+
+    border:1px solid rgba(255,255,255,.25);
+
+}
+
+
+
+.campo input::placeholder{
+
+    color:#b7cde8;
+
+}
+
+
+
+
+/* botão */
+
+
+button{
+
+
+    width:100%;
+
+    padding:16px;
+
+    margin-top:15px;
+
+    border:none;
+
+    border-radius:15px;
+
+
+    background:
+    linear-gradient(
+    90deg,
+    #0066ff,
+    #00d9ff
+    );
+
+
+    color:white;
+
+    font-size:18px;
+
+    font-weight:bold;
+
+    cursor:pointer;
+
+
+    box-shadow:
+    0 0 25px #009dff;
+
+
+    transition:.3s;
+
+
+}
+
+
+
+button:hover{
+
+    transform:scale(1.05);
+
+    box-shadow:
+    0 0 45px #00d9ff;
+
+}
+
+
+
+.final{
+
+    text-align:center;
+
+    margin-top:25px;
+
+    color:#9fcaff;
+
+    font-size:13px;
+
+}
+
+
+</style>
+
+
+</head>
+
+
+
+<body>
+
+
+<div class="login-box">
+
+
+<div class="logo">
+
+SistemaAI
+
+</div>
+
+
+<div class="sub">
+
+Gestão inteligente para sua loja
+
+</div>
+
+
+
+<div class="campo">
+
+<label>Usuário</label>
+
+<input 
+id="usuario"
+type="text"
+placeholder="Digite seu usuário">
+
+</div>
+
+
+
+
+<div class="campo">
+
+<label>Senha</label>
+
+<input 
+id="senha"
+type="password"
+placeholder="Digite sua senha">
+
+</div>
+
+
+
+
+<button onclick="entrar()">
+
+ENTRAR
+
+</button>
+
+
+
+<div class="final">
+
+SistemaAI © 2026 • Tecnologia e controle
+
+</div>
+
+
+</div>
+
+
+
+
+<script type="module" src="css/js/login.js"></script>
+
+
+</body>
+
+</html>

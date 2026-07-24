@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>SistemaAI - Produtos</title>
+
+<link rel="stylesheet" href="css/produtos.css">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>📦 Controle de Produtos</h1>
+
+<div class="formulario">
+
+<input id="nome" type="text" placeholder="Nome do produto">
+
+<select id="categoria">
+    <option value="IPH">iPhone</option>
+    <option value="FON">Fone</option>
+    <option value="SAM">Samsung</option>
+    <option value="TV">TV</option>
+    <option value="MAC">MacBook</option>
+    <option value="OUT">Outro</option>
+</select>
+
+<input id="precoCompra" type="number" placeholder="Preço de Compra">
+
+<input id="preco" type="number" placeholder="Preço de Venda">
+
+<input id="quantidade" type="number" placeholder="Quantidade">
+
+<input id="cor" type="text" placeholder="Cor">
+
+<input id="origem" type="text" placeholder="Origem">
+
+<input id="giga" type="text" placeholder="Giga / Tamanho">
+
+<button onclick="adicionarProduto()">
+Adicionar Produto
+</button>
+
+</div>
+
+<h2>Produtos cadastrados</h2>
+
+<input
+type="text"
+id="pesquisa"
+placeholder="🔍 Pesquisar por nome ou código..."
+onkeyup="mostrarProdutos()">
+
+<div class="cards">
+
+    <div class="card">
+        <h3>Total de Produtos</h3>
+        <h2 id="totalProdutos">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Total de Itens</h3>
+        <h2 id="totalItens">0</h2>
+    </div>
+
+    <div class="card">
+        <h3>Valor do Estoque</h3>
+        <h2 id="valorEstoque">R$ 0,00</h2>
+    </div>
+
+    <div class="card">
+        <h3>Estoque Baixo</h3>
+        <h2 id="estoqueBaixo">0</h2>
+    </div>
+
+</div>
+
+<table>
+
+<thead>
+
+<tr>
+<th>Código</th>
+<th>Produto</th>
+<th>Preço Compra</th>
+<th>Preço Venda</th>
+<th>Quantidade</th>
+<th>Cor</th>
+<th>Origem</th>
+<th>Giga</th>
+<th>Ações</th>
+</tr>
+
+</thead>
+
+<tbody id="listaProdutos">
+
+</tbody>
+
+
+</table>
+<script type="module" src="css/js/firebase.js"></script>
+<script type="module" src="css/js/produtos.js"></script>
+
+</div>
+
+</body>
+</html>
