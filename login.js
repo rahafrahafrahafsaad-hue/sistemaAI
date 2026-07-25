@@ -66,3 +66,6 @@ async function entrar() {
 // liberar para o botão HTML
 
 window.entrar = entrar;
+document
+.getElementById("btnEntrar")
+.addEventListener("click", entrar);
